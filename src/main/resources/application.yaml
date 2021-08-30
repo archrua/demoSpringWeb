@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: rest-api
+  profiles:
+    active: development
+  datasource:
+    platform: oracle
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: archrua
+    password: "#WHTJSroqkf21"
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: false
+    show-sql: true
+    database: oracle
+server:
+  port: 8888
