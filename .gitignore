@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+## HotbillSLA ##
+**/src/main/java/com/chosun/BTConstant.java
+**/src/main/java/com/chosun/HotbillSLA.java
+**/src/main/java/com/chosun/EmployeeController.java

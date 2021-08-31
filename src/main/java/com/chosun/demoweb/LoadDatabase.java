@@ -6,13 +6,21 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.IOException;
+
 @Configuration
-class LoadDatabase {
+public class LoadDatabase {
 
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
     @Bean
-    CommandLineRunner initDatabase(EmployeeRepository repository) {
+    CommandLineRunner init(EmployeeRepository repository) {
+//        HotbillSLA hotbillSLA = new HotbillSLA();
+//        try {
+//            hotbillSLA.viewPoint("1001702694");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
         return args -> {
             log.info("Preloading " + repository.save(new Employee("Bilbo Baggins", "burglar")));
